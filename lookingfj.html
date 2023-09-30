@@ -20,6 +20,19 @@
             </ul>
         </nav>
     </header>
+    <div class="container">
+        <h1>Job Listings</h1>
+        <ul>
+            <?php
+            $jobListings = file_get_contents("job_listings.txt");
+            $jobListings = explode("\n\n", $jobListings);
+    
+            foreach ($jobListings as $listing) {
+                echo "<li>$listing</li>";
+            }
+            ?>
+        </ul>
+    </div>
 
 
     <footer>
