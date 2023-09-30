@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Assets/logo.png" alt="Job Finder Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="employee.html">Jobs</a></li>
+                <li><a href="employers.html">Employer</a></li>
+                <li><a href="mailto:myxaakkari@gamil.com">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form-page">
+        <div class="container">
+    <h1 style="text-align: center;">Apply for Job</h1>
+    <form id="applyForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" style="width: 500px;" required><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" style="width: 500px;" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="width: 500px;" required><br>
+
+        <h4>Spoken Languages:</h4>
+        <label>
+            <input type="checkbox" name="languages" value="English"> English
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="Arabic"> Arabic
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="Hebrew"> Hebrew
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="Russian"> Russian
+        </label>
+
+        <h4>Can you start working immediately?</h4>
+        <label>
+            <input type="radio" name="startImmediately" value="Yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="startImmediately" value="No" required> No
+        </label><br><br>
+
+
+        <button type="submit" id="submitApplication">Submit Application</button>
+    </form>
+</div>
+</main>
+
+    <script src="apply.js"></script>
+</body>
+</html>

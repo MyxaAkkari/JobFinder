@@ -33,6 +33,13 @@ function showJobDetailsPopup(index) {
     jobDescriptionPopup.textContent = `Description: ${jobListing.description}`;
     companyEmailPopup.textContent = `Company Email: ${jobListing.email}`;
     timestampPopup.textContent = `Date Added: ${jobListing.timestamp}`;
+    var applyButton = document.getElementById("applyButton");
+    applyButton.setAttribute("data-company-email", jobListing.email);
+    applyButton.addEventListener("click", function () {
+        var email = encodeURIComponent(jobListing.email);
+        window.open(`apply.html?email=${email}`, "_blank");
+
+});
 
     // Display the job details popup
     jobDetailsPopup.style.display = "block";
