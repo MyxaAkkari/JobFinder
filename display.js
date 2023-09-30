@@ -47,7 +47,7 @@ function closePopup() {
 for (var i = 0; i < jobListings.length; i++) {
     var jobListing = jobListings[i];
     var listItem = document.createElement("li");
-    listItem.textContent = `Job Title: ${jobListing.title}`;
+    listItem.textContent = ` ${jobListing.title}`;
 
     // Add a click event listener to each job title
     listItem.addEventListener("click", function(event) {

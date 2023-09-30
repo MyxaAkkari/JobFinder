@@ -88,8 +88,33 @@ footer {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    width: 400px; /* Adjust the width as needed */
+}
+.popup-content {
+    margin-top: 10px;
+}
+
+.popup h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.popup p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #777;
 }
 .container {
         
@@ -154,4 +179,25 @@ footer {
     }
     
 
+}
+#jobListings {
+    list-style: none;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#jobListings li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#jobListings li:hover {
+    background-color: #f0f0f0;
 }
