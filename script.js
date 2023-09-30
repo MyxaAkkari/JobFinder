@@ -18,6 +18,7 @@ function submitJob() {
     var location = document.getElementById("location").value;
     var companyDescription = document.getElementById("companyDescription").value;
     var companyEmail = document.getElementById("companyEmail").value;
+    var currentDate = new Date();
 
 
     // Create a job listing object
@@ -27,7 +28,8 @@ function submitJob() {
         description: jobDescription,
         joblocation: location,
         codescription: companyDescription,
-        email: companyEmail
+        email: companyEmail,
+        timestamp: currentDate.toISOString()
     };
 
     // Get existing job listings from local storage or initialize an empty array
@@ -49,5 +51,3 @@ function submitJob() {
 
     alert("Job listing submitted successfully!");
 }
-
-

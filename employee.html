@@ -20,10 +20,24 @@
             </ul>
         </nav>
     </header>
+    <h1>Job Listings</h1>
     <ul id="jobListings"></ul>
 
-    <script src="display.js"></script>
+    <div id="jobDetailsPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Job Details</h2>
+            <p id="jobTitlePopup"></p>
+            <p id="companyNamePopup"></p>
+            <p id="companyDescriptionPopup"></p>
+            <p id="locationPopup"></p>
+            <p id="jobDescriptionPopup"></p>
+            <p id="companyEmailPopup"></p>
+            <p id="timestampPopup"></p>
+        </div>
+    </div>
 
+    <script src="display.js"></script>
     <footer>
         <p>&copy; 2023 Job Finder</p>
         <p><a href="https://morgalut.github.io/index/">Check this out!</a></p>
