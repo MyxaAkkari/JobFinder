@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="lookingfj.html">Jobs</a></li>
+                <li><a href="employee.html">Jobs</a></li>
                 <li><a href="employers.html">Employer</a></li>
                 <li><a href="mailto:myxaakkari@gamil.com">Contact us</a></li>
             </ul>
@@ -23,7 +23,7 @@
     <main class="form-page">
     <div class="container">
         <h1 style="text-align: center;">Post a Job Listing</h1>
-        <form action="submit.php" method="post">
+        <form id="jobForm">
             <label for="jobTitle">Job Title:</label><br>
             <input type="text" id="jobTitle" name="jobTitle" style="width: 500px;" required><br>
             
@@ -42,8 +42,9 @@
             <label for="companyEmail">Company Email:</label><br>
             <input type="email" id="companyEmail" name="companyEmail" style="width: 500px;"  required><br>
 
-            <button type="submit">Submit</button>
+            <button type="button" onclick="submitJob()">Submit</button>
         </form>
+        <script src="script.js"></script>
     </div>
 </main>
 </body>
