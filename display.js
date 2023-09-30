@@ -57,3 +57,28 @@ for (var i = 0; i < jobListings.length; i++) {
 
     jobListingsUl.appendChild(listItem);
 }
+// Get a reference to the search input field
+var searchInput = document.getElementById("searchInput");
+
+// Listen for changes in the search input field
+searchInput.addEventListener("input", function () {
+    var searchTerm = searchInput.value.toLowerCase();
+    filterJobListings(searchTerm);
+});
+
+// Function to filter job listings based on search term
+function filterJobListings(searchTerm) {
+    var jobListings = document.getElementById("jobListings");
+    var listings = jobListings.getElementsByTagName("li");
+
+    for (var i = 0; i < listings.length; i++) {
+        var listing = listings[i];
+        var jobTitle = listing.textContent.toLowerCase();
+
+        if (jobTitle.includes(searchTerm)) {
+            listing.style.display = "block";
+        } else {
+            listing.style.display = "none";
+        }
+    }
+}
